@@ -1,0 +1,102 @@
+/* start code to full map*/
+html { 
+  height: 100%;
+  width: 100%;
+  min-height: 600px;
+  min-width: 700px;
+}
+
+body { 
+   height: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+ #map {
+    width: 100%; 
+    height: 100%;
+ }
+
+ #loadingAjax {
+  /* position: absolute;*/
+  background: 0;
+  filter: alpha(opacity=18);
+  opacity: .30;
+  width: 46px;
+  height: 46px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+}
+
+#infoWindow {
+	max-height: 400px;
+}
+
+#loadingIneter {
+  margin-top:10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#msgFloat {
+  /*width: 280px;*/
+  width: 610px;
+  max-height: 270px;
+
+  table {
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    border-color: rgba(205, 207, 206, 0.4);
+  }
+
+  iframe {
+    width: 100%;
+    display: none;
+  }
+
+  .panel-heading, .panel-body {
+    padding: 5px;
+    max-height: 240px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  ul {
+    font-size: 12px;
+    padding-left: 20px;
+  }
+}
+
+#actionsButtons {
+  width: 230px;
+  text-align: center;
+  margin-bottom: 10px;
+
+  button {
+    margin-bottom: 5px;
+  }
+}
+
+.overMap {
+  position: absolute;
+  z-index: 100;
+}
+
+.overMap-topCenter {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overMap-bottomRight {
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
